@@ -1,0 +1,22 @@
+{
+  "name": "webpersonal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "tw:dev": "npx @tailwindcss/cli -i ./style.css -o ./dist/global.css --watch",
+    "dev": "npx webpack ./main.js --watch",
+    "build": "npx webpack ./main.js --mode=production"
+  },
+  "devDependencies": {
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "tailwindcss": "^4.2.4",
+    "typed.js": "^3.0.0"
+  }
+}
